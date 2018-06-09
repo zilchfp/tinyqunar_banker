@@ -1,0 +1,11 @@
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Controller/TicketController.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Domain/Ticket.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Domain/Order.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Repository/TicketRepository.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Comment/GlobalCorsConfig.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Service/OrderService.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Repository/OrderRepository.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Controller/LoginController.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Service/TicketService.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/SellerApplication.java
+/home/zilchfp/tinyqunar_seller/backend/src/main/java/cyc/tinyqnar/seller/seller/Controller/OrderController.java
