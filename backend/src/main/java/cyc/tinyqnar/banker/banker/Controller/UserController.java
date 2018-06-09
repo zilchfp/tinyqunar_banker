@@ -1,16 +1,25 @@
 package cyc.tinyqnar.banker.banker.Controller;
 
+import cyc.tinyqnar.banker.banker.Domain.User;
 import cyc.tinyqnar.banker.banker.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @EnableEurekaServer
 @RestController
-public class TicketController {
+public class UserController {
 
     @Autowired
     private UserService userService;
+
+
+    @RequestMapping("/user/all")
+    public List<User> getAllUser() {
+        return userService.getAllUser();
+    }
 
 //    @RequestMapping("/ticket/query")
 //    public List<User> RestTicketQuery() {
@@ -21,11 +30,7 @@ public class TicketController {
 //        return restUserList;
 //    }
 //
-//    @RequestMapping(value = "/ticket/delete", method = RequestMethod.POST)
-//    public int TicketDelete(@RequestParam(value = "id")int id) {
-//        System.out.println(id);
-//        return ticketService.deleteById(id);
-//    }
+
 //
 //
 //    @RequestMapping(value = "/ticket/add", method = {RequestMethod.POST, RequestMethod.GET})

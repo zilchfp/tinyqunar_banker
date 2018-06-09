@@ -9,6 +9,10 @@ import java.util.List;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
+    User findById(int id);
+
+    List<User> findAllBy();
+
 
 //    List<User> findAllByStartAndEnd(String start, String end);
 //
@@ -20,6 +24,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
 //
 //    @Transactional
 //    int deleteById(int id);
+
+
 
 
 
