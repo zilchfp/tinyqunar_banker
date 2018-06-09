@@ -12,9 +12,9 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
-    public Order findByID(int id) {
-        Order order = orderRepository.findByID(String.valueOf(id    ));
-        return order;
-
-    }
+//    public Order findByID(int id) {
+//        Order order = orderRepository.findByID(String.valueOf(id    ));
+//        return order;
+//
+//    }
 }

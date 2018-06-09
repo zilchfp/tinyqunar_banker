@@ -9,37 +9,24 @@ import javax.persistence.*;
 import java.sql.Time;
 
 @Entity
-@Table(name="tbl_ticket")
+@Table(name="bank_user")
 @Data
-public class Ticket {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column()
-    private String start;
+    @Column
+    private String username;
 
     @Column
-    private String end;
-
-
-    @Column
-    private String date;
+    private String password;
 
     @Column
-    private int time_hour;
+    private String qunar_id;
 
     @Column
-    private int time_minute;
-
-    @Column
-    private double price;
-
-    @Column
-    private int amount;
-
-    @Column
-    private Time start_time;
+    private double balance;
 
 }
