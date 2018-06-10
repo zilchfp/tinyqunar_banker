@@ -2,22 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="753faac5-6a30-4f76-b98a-962d27730375" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_ribbon_unknown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cyc/tinyqnar/banker/banker/Service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/banker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/banker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/BankerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/BankerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Comment/GlobalCorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Comment/GlobalCorsConfig$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Domain/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/BaseForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/BaseForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/BaseTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/BaseTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/OrderManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/OrderManagement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/TicketManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/UserManagement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/classes/cyc/tinyqnar/banker/banker/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/seller-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/seller-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/seller-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/seller-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/surefire-reports/TEST-cyc.tinyqnar.seller.seller.SellerApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/surefire-reports/cyc.tinyqnar.seller.seller.SellerApplicationTests.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -317,7 +323,7 @@
       <workItem from="1528204005520" duration="29000" />
       <workItem from="1528382262049" duration="1529000" />
       <workItem from="1528517785734" duration="35000" />
-      <workItem from="1528597075512" duration="6798000" />
+      <workItem from="1528597075512" duration="7463000" />
     </task>
     <task id="LOCAL-00001" summary="小改">
       <created>1527917557834</created>
@@ -330,7 +336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45654000" />
+    <option name="totallyTimeSpent" value="46319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-7" width="1920" height="1024" extended-state="6" />
