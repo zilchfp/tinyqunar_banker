@@ -31,20 +31,20 @@ export default new Router({
                 },
                 {
                     path: '/ticket',
-                    component: resolve => require(['../components/page/TicketManagement.vue'], resolve),
-                    meta: { title: '机票管理' }
+                    component: resolve => require(['../components/page/UserManagement.vue'], resolve),
+                    meta: { title: '用户管理' }
                 },
                 {
                     path: '/form',
                     component: resolve => require(['../components/page/BaseTable.vue'], resolve),
                     meta: { title: '机票查询' }
                 },
-                {
-                    // vue-schart组件
-                    path: '/charts',
-                    component: resolve => require(['../components/page/BaseCharts.vue'], resolve),
-                    meta: { title: '票务统计' }
-                },
+                // {
+                //     // vue-schart组件
+                //     path: '/charts',
+                //     component: resolve => require(['../components/page/BaseCharts.vue'], resolve),
+                //     meta: { title: '票务统计' }
+                // },
                 {
                     // 权限页面
                     path: '/permission',

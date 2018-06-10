@@ -2,7 +2,7 @@
     <div class="table">
         <div class="crumbs">
             <el-breadcrumb separator="/">
-                <el-breadcrumb-item><i class="el-icon-tickets"></i> 机票管理</el-breadcrumb-item>
+                <el-breadcrumb-item><i class="el-icon-tickets"></i> 用户管理</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
@@ -14,29 +14,21 @@
                 <!--</el-select>-->
                 <!--<el-input v-model="select_word" placeholder="筛选关键词" class="handle-input mr10"></el-input>-->
                 <!--<el-button type="primary" icon="search" @click="search">搜索</el-button>-->
-                <el-button type="primary" icon="addTicket" @click="addTicket">添加机票</el-button>
+                <el-button type="primary" icon="addTicket" @click="addTicket">添加用户</el-button>
             </div>
-            <el-table :data="data" border style="width: 100%" ref="multipleTable" @selection-change="handleSelectionChange">
+            <el-table :data="data" border style="width: 54%" ref="multipleTable" @selection-change="handleSelectionChange">
                 <!--<el-table-column type="selection" width="55"></el-table-column>-->
-                <el-table-column prop="date" label="日期" sortable width="120">
+                <!--<el-table-column prop="date" label="日期" sortable width="120">-->
+                <!--</el-table-column>-->
+                <el-table-column prop="id" label="用户ID" width="120">
                 </el-table-column>
-                <el-table-column prop="id" label="机票ID" width="120">
+                <el-table-column prop="username" label="用户名" width="120">
                 </el-table-column>
-                <el-table-column prop="date" label="日期" width="120">
+                <el-table-column prop="password" label="密码" width="120">
                 </el-table-column>
-                <el-table-column prop="start" label="出发地" width="120">
+                <el-table-column prop="qunar_id" label="平台id" width="120">
                 </el-table-column>
-                <el-table-column prop="end" label="目的地" width="120">
-                </el-table-column>
-                <el-table-column prop="start_time" label="出发时间" width="120">
-                </el-table-column>
-                <el-table-column prop="time_hour" label="小时" width="60">
-                </el-table-column>
-                <el-table-column prop="time_minute" label="分钟" width="60">
-                </el-table-column>
-                <el-table-column prop="price" label="价钱" width="120">
-                </el-table-column>
-                <el-table-column prop="amount" label="余量" width="120">
+                <el-table-column prop="balance" label="余额" width="60">
                 </el-table-column>
                 <el-table-column label="操作" width="180">
                     <template slot-scope="scope">
@@ -51,31 +43,22 @@
             </div>
         </div>
         <!-- 添加票弹出框 -->
-        <el-dialog title="编辑" :visible.sync="addEditVisible" width="30%">
+        <el-dialog title="添加新用户" :visible.sync="addEditVisible" width="30%">
             <el-form ref="form" :model="form" label-width="50px">
-                <el-form-item label="日期">
-                    <el-date-picker type="date" placeholder="选择日期" v-model="form.date" value-format="yyyy-MM-dd" style="width: 100%;"></el-date-picker>
+                <!--<el-form-item label="用户ID   ">-->
+                    <!--<el-input v-model="form.id"></el-input>-->
+                <!--</el-form-item>-->
+                <el-form-item label="用户名">
+                    <el-input v-model="form.username"></el-input>
                 </el-form-item>
-                <el-form-item label="出发地">
-                    <el-input v-model="form.start"></el-input>
+                <el-form-item label="密码">
+                    <el-input v-model="form.password"></el-input>
                 </el-form-item>
-                <el-form-item label="目的地">
-                    <el-input v-model="form.end"></el-input>
+                <el-form-item label="平台ID   ">
+                    <el-input v-model="form.qunar_id"></el-input>
                 </el-form-item>
-                <el-form-item label="出发时间">
-                    <el-input v-model="form.start_time"></el-input>
-                </el-form-item>
-                <el-form-item label="小时">
-                    <el-input v-model="form.time_hour"></el-input>
-                </el-form-item>
-                <el-form-item label="分钟">
-                    <el-input v-model="form.time_minute"></el-input>
-                </el-form-item>
-                <el-form-item label="价钱">
-                    <el-input v-model="form.price"></el-input>
-                </el-form-item>
-                <el-form-item label="余量">
-                    <el-input v-model="form.amount"></el-input>
+                <el-form-item label="账户余额">
+                    <el-input v-model="form.balance"></el-input>
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
@@ -87,32 +70,20 @@
         <!-- 编辑弹出框 -->
         <el-dialog title="编辑" :visible.sync="editVisible" width="30%">
             <el-form ref="form" :model="form" label-width="50px">
-                <el-form-item label="日期">
-                    <el-date-picker type="date" placeholder="选择日期" v-model="form.date" value-format="yyyy-MM-dd" style="width: 100%;"></el-date-picker>
+                <!--<el-form-item label="用户ID   ">-->
+                    <!--<el-input v-model="form.id"></el-input>-->
+                <!--</el-form-item>-->
+                <el-form-item label="用户名">
+                    <el-input v-model="form.username"></el-input>
                 </el-form-item>
-                <el-form-item label="机票ID   ">
-                    <el-input v-model="form.id"></el-input>
+                <el-form-item label="密码">
+                    <el-input v-model="form.password"></el-input>
                 </el-form-item>
-                <el-form-item label="出发地">
-                    <el-input v-model="form.start"></el-input>
+                <el-form-item label="平台ID   ">
+                    <el-input v-model="form.qunar_id"></el-input>
                 </el-form-item>
-                <el-form-item label="目的地">
-                    <el-input v-model="form.end"></el-input>
-                </el-form-item>
-                <el-form-item label="出发时间">
-                    <el-input v-model="form.start_time"></el-input>
-                </el-form-item>
-                <el-form-item label="小时">
-                    <el-input v-model="form.time_hour"></el-input>
-                </el-form-item>
-                <el-form-item label="分钟">
-                    <el-input v-model="form.time_minute"></el-input>
-                </el-form-item>
-                <el-form-item label="价钱">
-                    <el-input v-model="form.price"></el-input>
-                </el-form-item>
-                <el-form-item label="余量">
-                    <el-input v-model="form.amount"></el-input>
+                <el-form-item label="账户余额">
+                    <el-input v-model="form.balance"></el-input>
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
@@ -138,7 +109,7 @@
         name: 'basetable',
         data () {
             return {
-                baseurl:'http://localhost:10001',
+                baseurl:'http://localhost:10003',
                 url: './static/vuetable.json',
                 tableData: [],
                 cur_page: 1,
@@ -151,15 +122,11 @@
                 addEditVisible: false,
                 delVisible: false,
                 form: {
-                    date: '',
                     id:'',
-                    start:'',
-                    end:'',
-                    start_time:'',
-                    time_hour:'',
-                    time_minute:'',
-                    price:'',
-                    amount:''
+                    username:'',
+                    password:'',
+                    qunar_id:'',
+                    balance:''
                 },
                 idx: -1
             }
@@ -197,7 +164,7 @@
                 this.getData();
             },
             getData() {
-                this.url = this.baseurl+ '/ticket/query';
+                this.url = this.baseurl+ '/user/all';
                 this.$axios.post(this.url, {
                     page: this.cur_page
                 }).then((res) => {
@@ -217,16 +184,12 @@
                 this.idx = index;
                 const item = this.tableData[index];
                 this.form = {
-                    date: item.date,
-                    address: item.address,
-                    start_time: item.start_time,
-                    start: item.start,
-                    time_hour: item.time_hour,
-                    end: item.end,
                     id: item.id,
-                    time_minute: item.time_minute,
-                    price: item.price,
-                    amount: item.amount,
+                    username: item.username,
+                    password: item.password,
+                    qunar_id: item.qunar_id,
+                    balance: item.balance,
+
                 };
                 this.editVisible = true;
             },
@@ -271,7 +234,7 @@
                 this.delVisible = false;
                 this.$axios({
                     method: 'post',
-                    url: this.baseurl + '/ticket/delete',
+                    url: this.baseurl + '/user/delete',
                     headers: { 'Content-type': 'application/json' },
                     params: {
                         id:this.tableData[this.idx].id,
@@ -295,7 +258,7 @@
                 console.log(this.form);
                 this.$axios({
                     method: 'post',
-                    url: this.baseurl + '/ticket/add',
+                    url: this.baseurl + '/user/add',
                     headers: { 'Content-type': 'application/json' },
                     data: JSON.stringify(this.form)
                 }).then((response) => {

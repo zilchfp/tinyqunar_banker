@@ -5,7 +5,6 @@ import cyc.tinyqnar.banker.banker.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 @Service
@@ -34,6 +33,14 @@ public class UserService {
         return userRepository.findAllBy();
     }
 
+    public User updateUser(User user) {
+        return userRepository.save(user);
+    }
+
+    public int deleteById(int id) {
+        return userRepository.deleteById(id);
+    }
+
 //    //根据出发地点与目的地查票
 //    public List<User> findAllByStartAndEnd(String start, String end) {
 //        return userRepository.findAllByStartAndEnd(start, end);
@@ -53,9 +60,7 @@ public class UserService {
 //    }
 //
 //
-//    public User updateTicket(User user) {
-//        return userRepository.save(user);
-//    }
+
 
 
 }

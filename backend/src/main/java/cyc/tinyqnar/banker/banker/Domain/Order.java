@@ -14,6 +14,10 @@ import java.util.Date;
 @Data
 public class Order {
 
+    public Order() {
+
+    }
+
     public Order(int transferor_id, int recipient_id, double money) {
         this.transferor_id = transferor_id;
         this.recipient_id = recipient_id;

@@ -13,6 +13,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findAllBy();
 
+    int deleteById(int id);
+
 
 //    List<User> findAllByStartAndEnd(String start, String end);
 //

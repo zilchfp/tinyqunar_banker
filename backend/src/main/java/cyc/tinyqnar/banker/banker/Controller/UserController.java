@@ -1,11 +1,14 @@
 package cyc.tinyqnar.banker.banker.Controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import cyc.tinyqnar.banker.banker.Domain.User;
 import cyc.tinyqnar.banker.banker.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @EnableEurekaServer
@@ -21,22 +24,18 @@ public class UserController {
         return userService.getAllUser();
     }
 
-//    @RequestMapping("/ticket/query")
-//    public List<User> RestTicketQuery() {
-//        List<User> restUserList = ticketService.findRestTickets();
-//        if (restUserList == null) {
-//            System.out.println("null");
-//        }
-//        return restUserList;
-//    }
-//
+    @Transactional
+    @RequestMapping(value = "/user/delete", method = {RequestMethod.POST})
+    public int UserDelete(@RequestParam(value = "id")int id) {
+        System.out.println(id);
+        return userService.deleteById(id);
+    }
 
-//
-//
-//    @RequestMapping(value = "/ticket/add", method = {RequestMethod.POST, RequestMethod.GET})
-//    public User TicketEdit(@RequestBody String ticket) throws IOException {
-//        ObjectMapper mapper = new ObjectMapper();
-//        User t = mapper.readValue(ticket, User.class);
-//        return ticketService.updateTicket(t);
-//    }
+    @Transactional
+    @RequestMapping(value = "/user/add", method = {RequestMethod.POST, RequestMethod.GET})
+    public User UserEdit(@RequestBody String NewUser) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        User u = mapper.readValue(NewUser, User.class);
+        return userService.updateUser(u);
+    }
 }

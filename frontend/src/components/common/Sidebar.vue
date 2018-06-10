@@ -43,13 +43,13 @@
                     {
                         icon: 'el-icon-date',
                         index: 'ticket',
-                        title: '机票管理',
+                        title: '用户管理',
                     },
-                    {
-                        icon: 'el-icon-star-on',
-                        index: 'charts',
-                        title: '票务统计'
-                    },
+                    // {
+                    //     icon: 'el-icon-star-on',
+                    //     index: 'charts',
+                    //     title: '票务统计'
+                    // },
                     {
                         icon: 'el-icon-warning',
                         index: 'permission',
