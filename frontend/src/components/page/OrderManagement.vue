@@ -246,7 +246,7 @@
                 this.delVisible = false;
                 this.$axios({
                     method: 'post',
-                    url: this.baseurl + '/user/delete',
+                    url: this.baseurl + '/order/delete',
                     headers: { 'Content-type': 'application/json' },
                     params: {
                         id:this.tableData[this.idx].id,
@@ -268,13 +268,19 @@
                 this.$set(this.tableData, this.idx, this.form);
                 this.$axios({
                     method: 'post',
-                    url: this.baseurl + '/order/add',
+                    //test for add account for balance
+                    url: this.baseurl + '/deal/add',
+                    //url: this.baseurl + '/order/add',
                     headers: { 'Content-type': 'application/json' },
                     data: JSON.stringify(this.form)
                 }).then((response) => {
                     console.log(response);
+                    if (response.data === 0) {
+                        this.$message.error("转出方余额不足!");
+                    } else if (respose.data === 1) {
+                        this.$message.success("添加成功!");
+                    }
                     this.getData();
-                    this.$message.success("添加成功!");
                     this.addEditVisible = false;
                 }).catch(function (error) {
                     console.log(error);

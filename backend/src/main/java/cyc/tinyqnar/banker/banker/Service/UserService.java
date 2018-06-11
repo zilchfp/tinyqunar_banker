@@ -13,15 +13,17 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public boolean increaseBalance(int id, int money) {
+    public boolean increaseBalance(int id, double money) {
         User user = userRepository.findById(id);
         double oriBalance = user.getBalance();
         user.setBalance(oriBalance + money);
         userRepository.save(user);
+        System.out.println("ori:"+oriBalance);
+        System.out.println("after increase:" + userRepository.findById(id).getBalance());
         return (userRepository.findById(id).getBalance() == (oriBalance+money));
     }
 
-    public boolean decreaseBalance(int id, int money) {
+    public boolean decreaseBalance(int id, double money) {
         User user = userRepository.findById(id);
         double oriBalance = user.getBalance();
         user.setBalance(oriBalance - money);
@@ -39,6 +41,10 @@ public class UserService {
 
     public int deleteById(int id) {
         return userRepository.deleteById(id);
+    }
+
+    public User findByID(int id) {
+        return userRepository.findById(id);
     }
 
 //    //根据出发地点与目的地查票

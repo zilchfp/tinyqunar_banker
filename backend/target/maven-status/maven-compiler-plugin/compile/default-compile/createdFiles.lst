@@ -9,4 +9,5 @@ cyc/tinyqnar/banker/banker/Domain/Order.class
 cyc/tinyqnar/banker/banker/Comment/GlobalCorsConfig.class
 cyc/tinyqnar/banker/banker/Domain/User.class
 cyc/tinyqnar/banker/banker/Repository/UserRepository.class
+cyc/tinyqnar/banker/banker/Controller/DealController.class
 cyc/tinyqnar/banker/banker/Comment/GlobalCorsConfig$1.class

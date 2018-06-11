@@ -3,6 +3,7 @@
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Controller/OrderController.java
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Controller/LoginController.java
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Domain/Order.java
+/home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Controller/DealController.java
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Repository/OrderRepository.java
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Domain/User.java
 /home/zilchfp/tinyqunar_banker/backend/src/main/java/cyc/tinyqnar/banker/banker/Comment/GlobalCorsConfig.java

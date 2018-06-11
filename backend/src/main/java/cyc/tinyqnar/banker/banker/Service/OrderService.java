@@ -13,6 +13,8 @@ public class OrderService {
 
     @Autowired
     private OrderRepository orderRepository;
+
+    @Autowired
     private UserService userService;
 
 
@@ -26,7 +28,7 @@ public class OrderService {
 
 
 
-//    public void deleteById
+    public void deleteById(int id) {orderRepository.deleteById(id);}
 
 //    public Order findByID(int id) {
 //        Order order = orderRepository.findByID(String.valueOf(id    ));
